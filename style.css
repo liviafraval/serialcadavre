@@ -1,0 +1,76 @@
+html,
+body {
+    scroll-behavior: smooth;
+  }
+
+  footer{
+    position: sticky;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    
+  }
+  .top {    
+    text-decoration: none;
+    padding: 20px;
+    font-family: jrug punk;
+    font-size: 3vmin;
+    color: black;
+    background: white;
+    border:solid;
+    white-space: nowrap;
+  }
+  .top:hover{
+    color: #fff;
+    background-color: black;
+  }
+
+  ::selection{
+    color: #fff;
+    background-color: black;
+  }
+
+#numbers{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    gap: 0px;
+    row-gap: 0px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.title{
+    color: black;
+    padding-right: 10px;
+    background-color: #fff;
+    border: solid;
+    box-shadow: 0 0 30px 100px #fff;
+
+    text-align: center;
+    font-family: jrug Punk;
+    font-size: 6vmin;
+    align-items: center;
+
+    z-index: 999;
+}
+
+@media only screen and (min-width: 640px) { 
+    #numbers{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 860px) { 
+    #numbers{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 1080px) { 
+    #numbers{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}

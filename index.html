@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SERIAL CADAVRE EXCELLENT</title>
+    <link rel="icon" href="media/icons/disk.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="title">
+        <h1>SERIAL CADAVRE EXCeLlENT</h1>
+    </div>
+    <div id="numbers">
+        <img src="media/scan1.jpg" alt="">
+        <img src="media/scan2.jpg" alt="">
+        <img src="media/scan3.jpg" alt="">
+        <img src="media/scan4.jpg" alt="">
+        <img src="media/scan5.jpg" alt="">
+        <img src="media/scan6.jpg" alt="">
+        <img src="media/scan7.jpg" alt="">
+        <img src="media/scan8.jpg" alt="">
+        <img src="media/scan9.jpg" alt="">
+        <img src="media/scan10.jpg" alt="">
+        <img src="media/scan11.jpg" alt="">
+        <img src="media/scan12.jpg" alt="">
+        <img src="media/scan13.jpg" alt="">
+        <img src="media/scan14.jpg" alt="">
+        <img src="media/scan15.jpg" alt="">
+        <img src="media/scan16.jpg" alt="">
+        <img src="media/scan17.jpg" alt="">
+        <img src="media/scan18.jpg" alt="">
+        <img src="media/scan19.jpg" alt="">
+        <img src="media/scan20.jpg" alt="">
+        <img src="media/scan21.jpg" alt="">
+        <img src="media/scan22.jpg" alt="">
+        <img src="media/scan23.jpg" alt="">
+        <img src="media/scan24.jpg" alt="">
+        <img src="media/scan25.jpg" alt="">
+        <img src="media/scan26.jpg" alt="">
+        <img src="media/scan27.jpg" alt="">
+        <img src="media/scan28.jpg" alt="">
+        <img src="media/scan29.jpg" alt="">
+        <img src="media/scan30.jpg" alt="">
+        <img src="media/scan31.jpg" alt="">
+        <img src="media/scan32.jpg" alt="">
+        <img src="media/scan33.jpg" alt="">
+        <img src="media/scan34.jpg" alt="">
+        <img src="media/scan35.jpg" alt="">
+        <img src="media/scan36.jpg" alt="">
+        <img src="media/scan37.jpg" alt="">
+        <img src="media/scan38.jpg" alt="">
+        <img src="media/scan39.jpg" alt="">
+        <img src="media/scan40.jpg" alt="">
+        <img src="media/scan41.jpg" alt="">
+        <img src="media/scan42.jpg" alt="">
+        <img src="media/scan43.jpg" alt="">
+        <img src="media/scan44.jpg" alt="">
+        <img src="media/scan45.jpg" alt="">
+        <img src="media/scan46.jpg" alt="">
+        <img src="media/scan47.jpg" alt="">
+        <img src="media/scan48.jpg" alt="">
+        
+    </div>
+    <footer style="font-family: sans-serif; padding: 20px;">
+        <a href="#" class="top">&#8593; Back to Top &#8593;</a>
+        <p style="margin-top: 60px;">©Livia Fraval, <br>All rights reserved.</p>
+        <p>Web design by <a href="www.adambadger.net">Adam Badger</a></p>
+    </footer>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            var numbers = document.querySelector('#numbers');
+            var list = Array.from(numbers.children);
+            var newlist;
+
+            // Shuffle the images
+            list.sort(function(a, b) {
+                return -1 + Math.random() * 3; // -1, 0, or 1
+            });
+
+            // Remove existing images
+            while (numbers.children.length > 0) {
+                numbers.removeChild(numbers.children[0]);
+            }
+
+            // Possible rotation angles
+            var rotations = [90, 180, -90, -180];
+
+            // Append shuffled and rotated images back to the container
+            list.forEach(function(el) {
+                // Apply random rotation to each image
+                var randomRotation = rotations[Math.floor(Math.random() * rotations.length)];
+                el.style.transform = 'rotate(' + randomRotation + 'deg)';
+
+                // Append the image back to the container
+                numbers.appendChild(el);
+            });
+        });
+    </script>
+</body>
+</html>
