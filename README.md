@@ -1,1 +1,1 @@
-https://serialcadavre.github.io
+https://liviafraval.github.io/serialcadavre/
